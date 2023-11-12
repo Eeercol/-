@@ -1,0 +1,47 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00932340 .scope module, "tb_HelloWorld" "tb_HelloWorld" 2 6;
+ .timescale -9 -12;
+v008431F0_0 .net "an", 3 0, v00931218_0; 1 drivers
+v00843248_0 .var "clk", 0 0;
+v0093E418_0 .net "dp", 0 0, v00843140_0; 1 drivers
+v0093E470_0 .net "seg", 6 0, v00843198_0; 1 drivers
+S_00931190 .scope module, "uut" "HelloWorld" 2 14, 3 2, S_00932340;
+ .timescale 0 0;
+v00931218_0 .var "an", 3 0;
+v00931270_0 .net "clk", 0 0, v00843248_0; 1 drivers
+v00843140_0 .var "dp", 0 0;
+v00843198_0 .var "seg", 6 0;
+    .scope S_00932340;
+T_0 ;
+    %set/v v00843248_0, 0, 1;
+T_0.0 ;
+    %delay 5000, 0;
+    %load/v 8, v00843248_0, 1;
+    %inv 8, 1;
+    %set/v v00843248_0, 8, 1;
+    %jmp T_0.0;
+    %end;
+    .thread T_0;
+    .scope S_00932340;
+T_1 ;
+    %delay 1000000, 0;
+    %vpi_call 2 32 "$finish";
+    %end;
+    .thread T_1;
+    .scope S_00932340;
+T_2 ;
+    %delay 10000, 0;
+    %vpi_call 2 37 "$display", "Hello World";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_HelloWorld.v";
+    "./HelloWorld.v";
