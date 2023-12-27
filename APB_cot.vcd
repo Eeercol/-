@@ -1,0 +1,349 @@
+$date
+	Wed Dec 27 22:50:54 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module APB_cot_tb $end
+$var wire 32 ! PADDR [31:0] $end
+$var wire 1 " PENABLE $end
+$var wire 32 # PRDATA [31:0] $end
+$var wire 32 $ PRDATA_MASTER [31:0] $end
+$var wire 1 % PREADY $end
+$var wire 1 & PSEL $end
+$var wire 32 ' PWDATA [31:0] $end
+$var wire 1 ( PWRITE $end
+$var reg 32 ) PADDR_MASTER [31:0] $end
+$var reg 1 * PCLK $end
+$var reg 1 + PRESET $end
+$var reg 32 , PWDATA_MASTER [31:0] $end
+$var reg 1 - PWRITE_MASTER $end
+$scope module APB_master_1 $end
+$var wire 32 . PADDR_MASTER [31:0] $end
+$var wire 1 / PCLK $end
+$var wire 32 0 PRDATA [31:0] $end
+$var wire 1 % PREADY $end
+$var wire 1 1 PRESET $end
+$var wire 32 2 PWDATA_MASTER [31:0] $end
+$var wire 1 3 PWRITE_MASTER $end
+$var reg 32 4 PADDR [31:0] $end
+$var reg 1 5 PENABLE $end
+$var reg 32 6 PRDATA_MASTER [31:0] $end
+$var reg 1 7 PSEL $end
+$var reg 32 8 PWDATA [31:0] $end
+$var reg 1 9 PWRITE $end
+$scope task apb_read $end
+$var reg 32 : inp_addr [31:0] $end
+$upscope $end
+$scope task apb_write $end
+$var reg 32 ; inp_addr [31:0] $end
+$var reg 32 < inp_data [31:0] $end
+$upscope $end
+$upscope $end
+$scope module APB_cot_1 $end
+$var wire 32 = PADDR [31:0] $end
+$var wire 1 / PCLK $end
+$var wire 1 " PENABLE $end
+$var wire 1 & PSEL $end
+$var wire 32 > PWDATA [31:0] $end
+$var wire 1 ( PWRITE $end
+$var reg 32 ? PRDATA [31:0] $end
+$var reg 1 @ PREADY $end
+$var reg 32 A control_reg [31:0] $end
+$var reg 32 B output_reg [31:0] $end
+$upscope $end
+$upscope $end
+$scope module APB_cot_tb $end
+$scope module APB_master_1 $end
+$scope task apb_read $end
+$upscope $end
+$scope task apb_write $end
+$upscope $end
+$upscope $end
+$scope module APB_cot_1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111111111111111111111111111111 B
+b0 A
+0@
+b0 ?
+b0 >
+b0 =
+bx <
+bx ;
+bx :
+09
+b0 8
+07
+b0 6
+05
+b0 4
+03
+b0 2
+01
+b0 0
+0/
+b0 .
+0-
+b0 ,
+0+
+0*
+b0 )
+0(
+b0 '
+0&
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#200
+15
+1"
+19
+1(
+17
+1&
+b0 <
+b0 ;
+1-
+13
+1*
+1/
+#400
+0*
+0/
+#600
+1@
+1%
+1*
+1/
+#800
+0*
+0/
+#1000
+0@
+0%
+05
+0"
+07
+0&
+b1 ,
+b1 2
+1*
+1/
+#1200
+0*
+0/
+#1400
+15
+1"
+b1 8
+b1 '
+b1 >
+17
+1&
+b1 <
+1*
+1/
+#1600
+0*
+0/
+#1800
+b1 B
+1@
+1%
+b1 A
+b10 ,
+b10 2
+1*
+1/
+#2000
+0*
+0/
+#2200
+0@
+0%
+05
+0"
+07
+0&
+b10 8
+b10 '
+b10 >
+b10 <
+1*
+1/
+#2400
+0*
+0/
+#2600
+15
+1"
+17
+1&
+b11 ,
+b11 2
+1*
+1/
+#2800
+0*
+0/
+#3000
+b0 B
+1@
+1%
+b10 A
+b11 8
+b11 '
+b11 >
+b11 <
+1*
+1/
+#3200
+0*
+0/
+#3400
+b11111111111111111111111111111110 B
+0@
+0%
+b11 A
+05
+0"
+07
+0&
+b100 ,
+b100 2
+1*
+1/
+#3600
+0*
+0/
+#3800
+15
+1"
+b100 8
+b100 '
+b100 >
+17
+1&
+b100 <
+1*
+1/
+#4000
+0*
+0/
+#4200
+b1111111111111111111111111111111 B
+1@
+1%
+b100 A
+b101 ,
+b101 2
+1*
+1/
+#4400
+0*
+0/
+#4600
+0@
+0%
+05
+0"
+07
+0&
+b101 8
+b101 '
+b101 >
+b101 <
+1*
+1/
+#4800
+0*
+0/
+#5000
+15
+1"
+17
+1&
+0-
+03
+1*
+1/
+#5200
+0*
+0/
+#5400
+b1 B
+1@
+1%
+b101 A
+09
+0(
+b0 :
+1*
+1/
+#5600
+0*
+0/
+#5800
+0@
+0%
+b101 ?
+b101 #
+b101 0
+05
+0"
+07
+0&
+b100 )
+b100 .
+1*
+1/
+#6000
+0*
+0/
+#6200
+15
+1"
+17
+1&
+b100 4
+b100 !
+b100 =
+b100 :
+1*
+1/
+#6400
+0*
+0/
+#6600
+b1 6
+b1 $
+1@
+1%
+b1 ?
+b1 #
+b1 0
+1*
+1/
+#6800
+0*
+0/
+#7000
+0@
+0%
+05
+0"
+07
+0&
+1*
+1/
+#7100
